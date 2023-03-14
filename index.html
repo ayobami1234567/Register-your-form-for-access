@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/stye.css">
+  <link rel="stylesheet" href="./css/power.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    crossorigin="anonymous" />
+  <title>Create an Account</title>
+</head>
+
+<body>
+  <div class="form-container">
+    <form action="./src/Successful.html" class="requires-validation" id="l-form">
+      <h1>Fill the data form</h1>
+      <div class="form_div">
+        <input type="text" class="form__input" placeholder=" " required>
+        <label for="" class="form__label"><i class="fas fa-user"></i></label>
+        <div class="valid-feedback">Username field is valid!</div>
+        <div class="invalid-feedback">Username field cannot be blank!</div>
+      </div>
+
+
+
+      <div class="form_div">
+        <input type="email" class="form__input" placeholder=" " required>
+        <label for="" class="form__label"><i class="far fa-envelope"></i></label>
+        <div class="valid-feedback">Email field is valid!</div>
+        <div class="invalid-feedback">Email field cannot be blank!</div>
+      </div>
+
+      <div class="form_div">
+        <input type="number" class="form__input" placeholder=" " required>
+        <label for="" class="form__label"><i class="fa fa-phone-square" aria-hidden="true"></i>
+        </label>
+        <div class="valid-feedback">phone number field is valid!</div>
+        <div class="invalid-feedback">phone number field cannot be blank!</div>
+      </div>
+
+      <div class="form_div">
+        <label for="" class="gen-gta">Gender</label>
+
+        <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
+        <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
+
+        <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
+        <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
+
+        <input type="radio" class="btn-check" name="gender" id="secret" autocomplete="off" required>
+        <label class="btn btn-sm btn-outline-secondary" for="secret">Secret</label>
+
+        <div class="valid-feedback mv-up">You selected a gender!</div>
+        <div class="invalid-feedback mv-up">Please select a gender!</div>
+      </div>
+
+      <div class="form_div">
+        <input type="password" class="form__input" placeholder=" " required>
+        <label for="" class="form__label"><i class="fas fa-lock"></i> </label>
+        <div class="valid-feedback">Password field is valid!</div>
+        <div class="invalid-feedback">Password field cannot be blank!</div>
+      </div>
+
+      <input type="submit" class="form__button" value="Sign up">
+
+      <div>
+        <span></span>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
